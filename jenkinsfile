@@ -1,0 +1,14 @@
+import hudson.model.Result
+import hudson.model.Run
+import jenkins.model.CauseOfInterruption.UserInterruption
+import jenkins.model.InterruptedBuildAction
+
+build_node="firstNode"
+
+nodo("${build_node}"){
+  stage('Prep'){
+      sh "pwd"
+      sh "rm -rf ./*"
+  }
+}
+
