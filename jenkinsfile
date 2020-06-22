@@ -12,3 +12,19 @@ node("${build_node}"){
   }
 }
 
+node ("${build_node}"){
+  try{
+     stage('git checkout'){
+        parallel(
+           'stage1':{
+                 echo this is the testing phase of the checkout
+
+            }
+           'stage 2':{
+                 echo this is also checking weather it is possible to the checkout
+            }
+
+        )
+     }
+   }
+}
