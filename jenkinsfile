@@ -5,7 +5,7 @@ import jenkins.model.InterruptedBuildAction
 
 build_node="firstNode"
 
-node"${build_node}"){
+node("${build_node}"){
   stage('Prep'){
       sh "pwd"
       sh "rm -rf ./*"
