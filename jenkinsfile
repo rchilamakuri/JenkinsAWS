@@ -19,11 +19,10 @@ node ("${build_node}"){
            'stage1':{
                  echo this is the testing phase of the checkout
 
-            }
-           'stage 2':{
+            },
+           'stage2':{
                  echo this is also checking weather it is possible to the checkout
             }
-
         )
      }
    }
